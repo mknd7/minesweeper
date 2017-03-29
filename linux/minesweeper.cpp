@@ -10,7 +10,7 @@
 #include<iostream>
 #include<cstdlib>
 #include<ctime>
-#include<conio.h>
+#include "getch.h"
 
 using namespace std;
 
@@ -401,7 +401,7 @@ class Field
     */
     void disp()
     {
-        system("cls");
+        system("clear");
         cout<<"\n\tMinesweeper\n\n";
         int i,j;
         cout<<"      ";
@@ -462,7 +462,7 @@ class Field
                 reveal(x,y);
         }
 
-        int count;
+        int count = 0;
         for(x=0;x<n;x++)
             for(y=0;y<m;y++)
                 if(s[x][y].exp == false)
@@ -518,7 +518,7 @@ class Field
 */
 void start()
 {
-    system("cls");
+    system("clear");
     Field f;
     f.game();
     char op;
@@ -532,7 +532,7 @@ void start()
 
 int main()
 {
-    system("cls");
+    system("clear");
     cout<<"Welcome to the text-based version of minesweeper\n";
     cout<<"\nMinesweeper is a single-player puzzle game.\n"
             "The player is presented with a grid of identical "
@@ -552,7 +552,7 @@ int main()
             "Hard: 16 * 16 field with 40 mines\n";
     cout<<"\nPress Enter to continue.";
     char c;
-    while((c = getch())!=13) // ASCII value for Enter
+    while((c = getch())!=10) // ASCII value for Enter
     {}
     //Different method
     //while((c = cin.get())!='\n')
