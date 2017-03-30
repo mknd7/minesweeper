@@ -2,8 +2,12 @@
 Simple console version of the classic game Minesweeper.
 
 Includes both Windows and Linux versions.
-Requires GNU GCC's g++ compiler.
+Linux version requires GNU GCC's g++ compiler (preinstalled in most distributions).
+Windows version requires MinGW compiler (for providing g++ and getch functionality)
+
 To build the binary from the source,
-run `g++ -Wall minesweeper.cpp -o output_file.exe`
+run `g++ -Wall minesweeper.cpp -o output_file(.exe)`
 To play the game,
-run `./output_file.exe`
+run `./output_file(.exe)`
+
+Note: Add the .exe extension only on Windows.
