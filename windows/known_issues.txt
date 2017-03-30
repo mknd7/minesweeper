@@ -1,6 +1,5 @@
 Known issues
 
-
-1. system("cls") is used. System call specific to Windows.
-
-2. getch() is used. Requires conio.h (found in MinGW compiler).
+1. MinGW compiler (with g++) is required.
+2. system("cls") is used. System call specific to Windows.
+3. getch() is used. Requires conio.h (found in MinGW compiler).
